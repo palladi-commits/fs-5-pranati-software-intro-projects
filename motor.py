@@ -54,8 +54,8 @@ def animate(i):
     ax.grid()
     ax.set_xlim(0, 23)
     ax.set_ylim(0, 30)
-    ax.set_xlabel("time (s)")
-    ax.set_ylabel("velocity (m/s)")
+    ax.set_xlabel("time(s)")
+    ax.set_ylabel("velocity(m/s)")
     ax.plot(times, velocities)
 
 fig = plt.figure(figsize=(4, 3), dpi=150)

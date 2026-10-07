@@ -60,8 +60,8 @@ def animate(i):
     #print(max(velocities), times[-1])
     ax.set_xlim(0, 6000)#--> graph the x-axis from 0 to 6000
     ax.set_ylim(0, 45)#--> graph the y-axis from 0 to 45
-    ax.set_xlabel("time (s)")
-    ax.set_ylabel("velocity (m/s)")
+    ax.set_xlabel("time(s)")
+    ax.set_ylabel("velocity(m/s)")
     ax.plot(times, velocities)
 
 fig = plt.figure(figsize=(4, 3), dpi=150)
