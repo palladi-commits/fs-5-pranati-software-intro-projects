@@ -30,13 +30,13 @@ max_traction = friction_coefficient * mass * g  # most force the tires can deliv
 # changing vars 
 @dataclass  
 class State:  
-    time: float = 0.0 
-    driver_input: float = 0.0  
-    braking_force: float = 0.0 
-    drag: float = 0.0  
-    acceleration: float = 0.0 
-    velocity: float = 25.0 
-    distance: float = 0.0 
+    time: 0.0 
+    driver_input:0.0  
+    braking_force:0.0 
+    drag: 0.0  
+    acceleration:0.0 
+    velocity: 25.0 
+    distance: 0.0 
 
 state = State()  
 times = []  
