@@ -32,13 +32,13 @@ max_traction = friction_coefficient * mass * g  # most force the tires can deliv
 # changing vars
 @dataclass
 class State:
-    time: 0.0  # time in seconds
-    driver_input: 0.0
-    command_torque: 0.0
-    motor_force:0.0  # what the motor wants to push with
-    force:  0.0  # what the tires actually deliver
-    acceleration:  0.0
-    velocity: 0.0
+    time: float = 0.0  # time in seconds
+    driver_input: float = 0.0
+    command_torque: float = 0.0
+    motor_force: float = 0.0  # what the motor wants to push with
+    force: float = 0.0  # what the tires actually deliver
+    acceleration: float = 0.0
+    velocity: float = 0.0
 
 def step(state: State) -> State:
     if state.time <= 7:
